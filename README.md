@@ -1,6 +1,6 @@
 # M153-Project
 
-📓 1. Kurzbeschreibung
+📓 # 1. Kurzbeschreibung
 In einer Gruppenarbeit (max. zwei Lernende) entwerfen und erstellen Sie eine Datenbank zu einem frei gewählten 
 Thema.
 Die Datenbank wird unter MS-SQL (T-SQL) erstellt, so dass alle Skripts mit dem «SQL-Server Management Studio»
@@ -13,7 +13,7 @@ Das Projekt umfasst:
 Triggers, der Stored Procedure und der Function.
 • einen einfachen Arbeitsrapport (mit Datum, Dauer, Beschreibung, Person pro ausgeführte Arbeit).
 
-🔢 2. Datenbank
+🔢 # 2. Datenbank
 Das Datenbank-Thema kann frei gewählt werden und muss vor dem Projektstart durch die Lehrperson genehmigt 
 werden. Das Thema muss eindeutig sein, d.h. es darf innerhalb der Klasse bzw. des Jahrgangs nur einmal vorkommen.
 Die Datenbank muss die folgenden Bedingungen erfüllen:
@@ -35,13 +35,13 @@ Die Datenbank muss die folgenden Bedingungen erfüllen:
 Abfragen/Manipulationen bzw. Tests ausgeführt werden
 • Es sollen pro Tabelle mindestens 20 Testdatensätze verwendet werden.
 
-📁 3. SQL-Code
+📁 # 3. SQL-Code
 Es wird SQL-Code für die folgenden Funktionalitäten erwartet:
 • zum Erstellen der Datenbank inkl. Trigger und gespeicherte Prozeduren/Funktionen
 • zum Abfüllen der Datenbank mit Testdaten
 • zu jeder Abfrage / Manipulation bzw. Test
 
-🥇 4. Erwartetes Resultat
+🥇 # 4. Erwartetes Resultat
 Eine Dokumentation mit:
 • Kurzbeschreibung des Themas
 • ER-Diagramm der Datenbank
@@ -61,7 +61,7 @@ Einzelarbeit
 • Nummer der aktuellen Seite und die totale Anzahl Seiten 
 Eine entsprechende Word-Vorlage kann bei Bedarf verlangt werden.
 
-🤐 5. Abgabe
+🤐 # 5. Abgabe
 Umfang: Eine gezippte Datei mit dem Namen der beiden Gruppenmitglieder bzw. Namen bei einer Einzelarbeit in 
 der folgenden Form:
  M153_Projekt_Nachname1_Vorname1_Nachname2_Vorname2.zip
