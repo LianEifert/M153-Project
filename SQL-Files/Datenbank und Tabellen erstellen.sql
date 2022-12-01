@@ -44,3 +44,7 @@ Streckenlänge float,
 Streckenname varchar (50),
 Land varchar (50)
 )
+Create table fährt (
+fährtId Integer identity,
+Datum date,
+)
