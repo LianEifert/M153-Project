@@ -7,7 +7,7 @@ TeamId integer identity,
 TeamName varchar (50),
 Budget int,
 Besitzer varchar(50),
-Einstiegsjahr date
+Einstiegsjahr int
 );
 Create Table Fahrer (
  FahrerId integer identity,
@@ -25,13 +25,13 @@ MitarbeiterId integer identity,
  Vorname varchar(50),
  Nachname varchar(50),
  Einkommen float,
- Geburtsjahr date,
+ Geburtsdatum date,
 )
 Create Table Sponsoren (
 SponsorenId integer identity,
 Sponsorenname varchar(50),
 Besitzer varchar(50),
-Einstiegsjahr date,
+Einstiegsjahr int,
 Investition float
 )
 Create table Rennstrecken (
