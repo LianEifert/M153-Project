@@ -17,7 +17,7 @@ Create Table Fahrer (
  Geburtsjahr date,
  Startnummer int,
  Punkte int,
- Einstiegsjahr date
+ Einstiegsjahr int
 )
 
 Create Table Mitarbeiter (
