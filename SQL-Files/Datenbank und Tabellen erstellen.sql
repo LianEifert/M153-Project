@@ -5,9 +5,6 @@ USE Formel1
 Create Table Teams (
 TeamId integer identity,
 TeamName varchar (50),
-Fahrer varchar (50),
-Mitarbeiter varchar(50),
-Sponsoren varchar (50),
 Budget int,
 Besitzer varchar(50),
 Einstiegsjahr date
