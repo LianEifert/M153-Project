@@ -37,3 +37,10 @@ Besitzer varchar(50),
 Einstiegsjahr date,
 Investition float
 )
+Create table Rennstrecken (
+StreckenId Integer identity,
+Ort varchar (50),
+Streckenlänge float,
+Streckenname varchar (50),
+Land varchar (50)
+)
