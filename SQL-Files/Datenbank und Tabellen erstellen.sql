@@ -14,7 +14,7 @@ Create Table Fahrer (
  Vorname varchar(50),
  Nachname varchar(50),
  Einkommen float,
- Geburtsjahr date,
+ Geburtsdatum date,
  Startnummer int,
  Punkte int,
  Einstiegsjahr int
