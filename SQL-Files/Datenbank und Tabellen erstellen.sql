@@ -19,6 +19,7 @@ Create Table Fahrer (
  Startnummer int,
  Punkte int,
  Einstiegsjahr int,
+ EinkommenProPunkt float,
  FK_TeamId integer,
  PRIMARY KEY (FahrerId)
 )
