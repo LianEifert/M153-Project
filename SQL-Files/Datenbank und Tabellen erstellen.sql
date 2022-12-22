@@ -47,7 +47,8 @@ StreckenId Integer identity,
 Ort varchar (50),
 Streckenlänge float,
 Streckenname varchar (50),
-Land varchar (50)
+Land varchar (50),
+PRIMARY KEY (StreckenId)
 )
 Create table fährt (
 fährtId Integer identity,
@@ -73,7 +74,7 @@ ADD FOREIGN KEY (FK_TeamId) REFERENCES Teams(TeamID);
 GO
 ALTER TABLE fährt
 ADD FOREIGN KEY (FK_StreckenId) REFERENCES Rennstrecken(StreckenId),
-ADD FOREIGN KEY (FK_FahrerID) REFERENCES Fahrer(FahrerId);
+FOREIGN KEY (FK_FahrerID) REFERENCES Fahrer(FahrerId);
 GO
 
 
