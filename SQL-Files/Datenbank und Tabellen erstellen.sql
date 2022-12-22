@@ -19,6 +19,7 @@ Create Table Fahrer (
  Startnummer int,
  Punkte int,
  Einstiegsjahr int,
+ FK_TeamId integer,
  PRIMARY KEY (FahrerId)
 )
 
@@ -28,6 +29,7 @@ MitarbeiterId integer identity,
  Nachname varchar(50),
  Einkommen float,
  Geburtsdatum date,
+ FK_TeamID integer,
  PRIMARY KEY (MitarbeiterID)
 )
 Create Table Sponsoren (
@@ -36,6 +38,7 @@ Sponsorenname varchar(50),
 Besitzer varchar(50),
 Einstiegsjahr int,
 Investition float,
+FK_TeamId integer
 PRIMARY KEY (SponsorenId)
 )
 Create table Rennstrecken (
@@ -48,4 +51,28 @@ Land varchar (50)
 Create table fährt (
 fährtId Integer identity,
 Datum date,
+FK_StreckenId integer,
+FK_FahrerId integer,
+PRIMARY KEY (fährtId)
 )
+
+GO
+
+ALTER TABLE Fahrer
+ADD FOREIGN KEY (FK_TeamId) REFERENCES Teams(TeamID);
+GO
+ALTER TABLE Mitarbeiter
+ADD FOREIGN KEY (FK_TeamId) REFERENCES Teams(TeamID);
+GO
+ALTER TABLE Mitarbeiter
+ADD FOREIGN KEY (FK_TeamId) REFERENCES Teams(TeamID);
+GO
+ALTER TABLE Mitarbeiter
+ADD FOREIGN KEY (FK_TeamId) REFERENCES Teams(TeamID);
+GO
+ALTER TABLE fährt
+ADD FOREIGN KEY (FK_StreckenId) REFERENCES Rennstrecken(StreckenId),
+ADD FOREIGN KEY (FK_FahrerID) REFERENCES Fahrer(FahrerId);
+GO
+
+
