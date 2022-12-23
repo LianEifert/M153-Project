@@ -1,3 +1,4 @@
+DBCC CHECKIDENT (Mitarbeiter, RESEED, 0)
 Insert into  Mitarbeiter (Vorname, Nachname, Einkommen, Geburtsdatum,FK_TeamID)
 Values ('Mattia', 'Binotto', 3, '1969-11-03',0)
 Insert into  Mitarbeiter (Vorname, Nachname, Einkommen, Geburtsdatum,FK_TeamID)
