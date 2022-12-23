@@ -1,3 +1,4 @@
+DBCC CHECKIDENT (Teams, RESEED, 0)
 Insert into Teams (TeamName, Budget, Besitzer, Einstiegsjahr)
 Values ('Red Bull Racing', 445, 'Franz Watzlawick', 2005)
 Insert into Teams (TeamName, Budget, Besitzer, Einstiegsjahr)
