@@ -1,3 +1,4 @@
+DBCC CHECKIDENT (Fahrer, RESEED, 0)
 Insert into Fahrer (Vorname, Nachname, Einkommen, Geburtsdatum, Startnummer, Punkte, Einstiegsjahr,FK_TeamId)
 Values ('Max', 'Verstappen', 36000000, '1997-09-30', 1, 2011.5, 2015, 0)
 Insert into Fahrer (Vorname, Nachname, Einkommen, Geburtsdatum, Startnummer, Punkte, Einstiegsjahr,FK_TeamId)
