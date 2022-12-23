@@ -3,7 +3,7 @@ CREATE PROCEDURE SelectTeamVonFahrerVorname
    AS
    BEGIN
        SELECT Fahrer.Vorname +' '+Fahrer.Nachname as Name, teams.TeamName
-       FROM fahrer 
+       FROM Fahrer 
        INNER JOIN teams 
        ON fahrer.FK_TeamId = TeamId
        WHERE fahrer.Vorname = @Fahrervorname;
