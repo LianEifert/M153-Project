@@ -48,7 +48,7 @@ SELECT durchschnittliches_einkommen_pro_Team(@team_id);
 -- Dieser Testfall gibt die ID 99 mit die ungültig ist und erwartet den Rückgabewert NULL.
 
 
-Test case 3:
+--Test case 3:
 
 
 -- Test mit ID die keine Fahrer hat
