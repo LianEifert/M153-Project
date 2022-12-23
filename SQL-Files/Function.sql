@@ -23,7 +23,7 @@ BEGIN
     RETURN @result
 END
 
-
+GO
 
 -- Testfälle:
 
