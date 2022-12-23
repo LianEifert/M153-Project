@@ -1,3 +1,4 @@
+DBCC CHECKIDENT (fährt, RESEED, 0)
 Insert into fährt (Datum,FK_StreckenId,FK_FahrerId)
 Values ('2022-03-20', 0, 0)
 Insert into fährt (Datum,FK_StreckenId,FK_FahrerId)
