@@ -1,3 +1,4 @@
+--Funktion erstellen
 CREATE FUNCTION durchschnittliches_einkommen_pro_Team (@team_id INT)
 RETURNS FLOAT
 AS
@@ -57,7 +58,7 @@ DECLARE @team_id INT = NULL
 SELECT durchschnittliches_einkommen_pro_Team(@team_id)
 
 GO
-
+--Procedure erstellen
 CREATE PROCEDURE SelectTeamVonFahrerVorname
    @Fahrervorname varchar(50)
    AS
@@ -108,6 +109,7 @@ EXEC SelectTeamVonFahrerVorname NULL
 --Dieser Test bekommt den Wert NULL und es wird erwartet das in beiden Ausgabespalten NULL steht
 GO
 
+--Trigger erstellen
 CREATE TRIGGER GetEinkommenProPunkt
 ON fahrer
 AFTER INSERT
