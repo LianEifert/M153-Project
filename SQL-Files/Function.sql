@@ -10,11 +10,11 @@ BEGIN
         RETURN NULL
     END
 
-   --Schauen ob das Team fahrer hat
-    IF NOT EXISTS (SELECT 1 FROM Fahrer WHERE FK_TeamId = @team_id AND Einkommen IS NOT NULL)
-    BEGIN
-        RETURN NULL
-    END
+   -- Schauen das es nicht NULL ist
+       IF @team_id IS NULL
+       BEGIN
+          RETURN NULL
+       END
 
     SELECT @result = AVG(Einkommen)
     FROM Fahrer
@@ -51,8 +51,8 @@ SELECT durchschnittliches_einkommen_pro_Team(@team_id);
 --Test case 3:
 
 
--- Test mit ID die keine Fahrer hat
-DECLARE @team_id INT = 45
+-- Test mit ID die NULL ist
+DECLARE @team_id INT = NULL
 
 SELECT durchschnittliches_einkommen_pro_Team(@team_id)
 
