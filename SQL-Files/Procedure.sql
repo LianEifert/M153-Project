@@ -23,6 +23,7 @@ CREATE PROCEDURE SelectTeamVonFahrerVorname
        WHERE fahrer.Vorname = @Fahrervorname;
    END
 
+GO 
 -- Testfälle
 
 --Test case 1:
