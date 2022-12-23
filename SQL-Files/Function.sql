@@ -6,7 +6,7 @@ BEGIN
 
     SELECT @result = AVG(EinkommenProPunkt)
     FROM Fahrer
-    WHERE FK_TeamId = @team_id
+    WHERE FK_TeamId = @Team_id
 
     RETURN @result
 END
