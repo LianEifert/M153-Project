@@ -1,3 +1,4 @@
+DBCC CHECKIDENT (Sponsoren, RESEED, 0)
 Insert into Sponsoren (Sponsorenname, Besitzer, Einstiegsjahr, Investition, FK_TeamId)
 Values ('Philip Morris', 'André Calantzopoulos', 1973, 157.5 , 1)
 Insert into Sponsoren (Sponsorenname, Besitzer, Einstiegsjahr, Investition, FK_TeamId)
