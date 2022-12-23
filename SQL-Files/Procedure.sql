@@ -29,7 +29,7 @@ CREATE PROCEDURE SelectTeamVonFahrerVorname
 
 
 -- Test mit gültigem Vornamen
-EXEC SelectTeamVonFahrerVorname 'Vettel'
+EXEC SelectTeamVonFahrerVorname 'Sebastian'
 -- Dieser Test bekommt einen gültigen Vornamen und es wird erwartet das es den Nachnamen und Vornamen in einer Spalte und sein Team in einer anderen Spalte ausgibt
 
 --Test case 2:
